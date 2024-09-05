@@ -1,0 +1,22 @@
+.skip-to-content__link {
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-to-content__link:focus {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  padding: 0.5rem;
+  background-color: var(--foreground);
+  color: var(--background);
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1000;
+}

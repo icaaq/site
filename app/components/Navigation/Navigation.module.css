@@ -1,0 +1,36 @@
+.main-nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+.main-nav__ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.main-nav__li {
+  display: inline;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  position: relative;
+}
+
+.main-nav__link--is-active {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 550px) {
+  .main-nav__ul {
+    flex-direction: row;
+  }
+}
