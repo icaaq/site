@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Noto_Sans } from "next/font/google";
 import "./globals.css";
-import { Navigation, SkipToContent } from "./components";
+import { Footer, Navigation, SkipToContent } from "./components";
 
 const notoSans = Noto_Sans({
   weight: ["400", "700"], // Specify weights you want to use (optional)
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 const links = [
   { href: "/", label: "Home" },
-  { href: "/project", label: "Project" },
+  { href: "/projects", label: "Projects" },
   { href: "/contact", label: "Contact" },
   {
     href: "/cv",
@@ -35,6 +35,7 @@ export default function RootLayout({
         <SkipToContent />
         <Navigation links={links} />
         {children}
+        <Footer />
       </body>
     </html>
   );
