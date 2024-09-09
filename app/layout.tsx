@@ -32,8 +32,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${notoSans.className}`}>
-        <SkipToContent />
-        <Navigation links={links} />
+        <header>
+          <SkipToContent />
+          <Navigation links={links} />
+        </header>
         {children}
         <Footer />
       </body>
