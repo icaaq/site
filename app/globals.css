@@ -1,7 +1,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --accent: #cd5942;
+  --accent: #b83e2a;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,6 +37,7 @@ a {
 
 a:not(nav a) {
   color: var(--accent);
+  text-decoration: underline;
 }
 
 footer {
