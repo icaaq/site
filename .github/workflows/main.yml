@@ -2,7 +2,7 @@ name: Build and Deploy
 
 on:
   push:
-    branches: [ main ]  # Trigger on push to main branch
+    branches: [ "main" ]  # Trigger on push to main branch
 
 jobs:
   build-and-deploy:
@@ -21,9 +21,6 @@ jobs:
       
     - name: Build
       run: npm run build
-      
-    - name: Export static files
-      run: npm run export
       
     - name: Deploy to FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
